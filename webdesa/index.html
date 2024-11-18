@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Desa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="hamburger" onclick="toggleMenu()" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1>Profil Desa Karangwaru</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#profil-daerah">Profil Daerah</a></li>
+          <li><a href="#berita">Berita</a></li>
+          <li><a href="#pariwisata-kebudayaan">Pariwisata & Kebudayaan</a></li>
+          <li><a href="#layanan-publik">Layanan Publik</a></li>
+          <li><a href="#peta-daerah">Peta Daerah</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="#media-sosial">Media Sosial</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="home">
+      <h1>Selamat Datang di Desa Karangwaru</h1>
+      <p>
+        Desa kami adalah tempat yang indah dengan banyak potensi alam dan
+        budaya.
+      </p>
+    </section>
+
+    <section id="profil-daerah" class="profil-daerah">
+      <h2>Profil Daerah</h2>
+      <div class="tabs">
+        <button onclick="showContent('sejarah')" id="btnSejarah">
+          Sejarah
+        </button>
+        <button onclick="showContent('geografi')" id="btnGeografi">
+          Geografi
+        </button>
+        <button onclick="showContent('demografi')" id="btnDemografi">
+          Demografi
+        </button>
+      </div>
+
+      <div id="sejarah" class="tab-content">
+        <p>Sejarah singkat tentang desa kami</p>
+      </div>
+
+      <div id="geografi" class="tab-content">
+        <p>Geografi dan lokasi Desa kami</p>
+      </div>
+
+      <div id="demografi" class="tab-content">
+        <p>Demografi penduduk Desa kami</p>
+      </div>
+    </section>
+
+    <section id="berita" class="berita">
+      <h2>Berita Terbaru</h2>
+      <article>
+        <h3>Festival Panen Raya 2024</h3>
+        <p>
+          Desa Karangwaru baru saja menggelar Festival Panen Raya yang meriah
+          dengan berbagai kegiatan budaya dan kuliner khas daerah.
+        </p>
+      </article>
+      <article>
+        <h3>Peningkatan Infrastruktur Desa</h3>
+        <p>
+          Pemerintah desa telah menyelesaikan proyek pengaspalan jalan utama
+          untuk memperlancar akses ke daerah sekitar.
+        </p>
+      </article>
+      <article>
+        <h3>Pelatihan Kerajinan Tangan</h3>
+        <p>
+          Pelatihan pembuatan kerajinan tangan berbahan rotan diadakan untuk
+          meningkatkan keterampilan warga desa.
+        </p>
+      </article>
+    </section>
+
+    <section id="pariwisata-kebudayaan" class="pariwisata-kebudayaan">
+      <h2>Pariwisata dan Kebudayaan</h2>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="assets/pariwisata/gambar1.jpg"
+            alt="Pantai Ngalur"
+            class="card-img"
+          />
+          <div class="card-content">
+            <h3>Pantai Lumbung</h3>
+            <p>
+              Pantai Lumbung terletak di Desa Pucanglaban, Kecamatan
+              Pucanglaban, Kabupaten Tulungagung. Jalan menuju ke Pantai Lumbung
+              ini melewati Jalur Lintas Selatan atau biasa yang kita kenal
+              dengan JLS.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/pariwisata/gambar2.jpg"
+            alt="Pegunungan Merah"
+            class="card-img"
+          />
+          <div class="card-content">
+            <h3>Pantai Ngalur</h3>
+            <p>
+              Pantai ini terletak di Desa Jenglungharjo, Kecamatan
+              Tanggunggunung, Kabupaten Tulungagung. Lokasi Pantai Ngalur
+              terletak di Kawasan Hutan Lindung Jengglungharjo
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/pariwisata/gambar2.jpg"
+            alt="Pegunungan Merah"
+            class="card-img"
+          />
+          <div class="card-content">
+            <h3>Pantai Ngalur</h3>
+            <p>
+              Pantai ini terletak di Desa Jenglungharjo, Kecamatan
+              Tanggunggunung, Kabupaten Tulungagung. Lokasi Pantai Ngalur
+              terletak di Kawasan Hutan Lindung Jengglungharjo
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/pariwisata/gambar3.jpg"
+            alt="Pegunungan dan Sungai yang mengalir"
+            class="card-img"
+          />
+          <div class="card-content">
+            <h3>Pantai Sanggar</h3>
+            <p>
+              Pantai ini terletak di Desa Jengglungharjo, Kecamatan
+              Tanggunggunung, Kabupaten Tulungagung. Rute dari Pantai ini sama
+              dengan Pantai Ngalur karena memang letak kedua pantai ini
+              bersebelahan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan-publik" class="layanan-publik">
+      <h2>Layanan Publik</h2>
+      <ul>
+        <li><a href="#">Layanan 1</a></li>
+        <li><a href="#">Layanan 2</a></li>
+        <li><a href="#">Layanan 3</a></li>
+      </ul>
+    </section>
+
+    <section id="peta-daerah" class="peta-daerah">
+      <h2>Peta Daerah</h2>
+      <div class="map-kontainer">
+        <p>Ini adalah peta interaktif daerah Desa Karangwaru</p>
+      </div>
+    </section>
+
+    <section id="kontak" class="kontak">
+      <h2>Kontak Kami</h2>
+      <form>
+        <input type="text" name="name" placeholder="Nama" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Pesan" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+
+    <section id="media-sosial">
+      <h2>Ikuti Kami di Media Sosial</h2>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </section>
+
+    <section id="galeri" class="galeri">
+      <h2>Galeri Foto Dokumentasi Kegiatan Desa</h2>
+      <div class="gallery-grid">
+        <img src="1.jpg" alt="Gambar 1" />
+        <img src="2.jpg" alt="Gambar 2" />
+        <img src="3.jpg" alt="Gambar 3" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 Desa Karangwaru.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
